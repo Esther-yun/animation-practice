@@ -1,0 +1,90 @@
+@keyframes dot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(1, 2);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+
+  75% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+body {
+  background-color: #6bbcbe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.dot {
+  display: flex;
+  margin-bottom: 33.5px;
+  animation: dot 1s ease-in-out infinite;
+}
+
+.dot > div {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  background-color: white;
+}
+
+.line {
+  display: flex;
+  margin-top: 33.5px;
+}
+
+.line > div {
+  height: 30px;
+  width: 7px;
+  margin: 0px 2.5px;
+  background-color: white;
+}
+
+.line-1 {
+  animation: line 1s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.line-2 {
+  animation: line 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.line-3 {
+  animation: line 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+.line-4 {
+  animation: line 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+.line-5 {
+  animation: line 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
